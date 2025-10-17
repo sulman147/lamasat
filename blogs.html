@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Blogs | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+    <body class="font-sans  bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Current News
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">Home <span
+                        class="text-primary">→</span> Curent News</p>
+            </div>
+        </section>
+        <!-- Booking Schedule start -->
+        <section class="py-20 bg-white">
+            <div
+                class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <!-- Left: Blog Grid -->
+                <div
+                    class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Blog Card -->
+                    <div class="relative group w-full max-w-sm mx-auto">
+                        <!-- Image -->
+                        <div class="relative overflow-hidden rounded-t-lg">
+                            <img
+                                src="./assets/haircutstyle.png"
+                                alt="Best Hair Care Tips"
+                                class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105" />
+
+                            <!-- Views Badge -->
+                            <div
+                                class="absolute top-3 left-3 bg-pink-100 text-primary text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                                <img src="./assets/view-icon.svg" alt="Views"
+                                    class="w-4 h-4" />
+                                1002 Views
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="bg-white text-center border border-gray-200 rounded-b-lg shadow-sm p-5 -mt-3 relative z-10">
+                            <p class="text-sm text-primary font-semibold mb-1">7
+                                SEP, 2025</p>
+                            <h3
+                                class="font-display text-lg md:text-xl font-semibold text-gray-800 hover:text-primary transition">
+                                Best Hair Care Tips.
+                            </h3>
+                            <p class="text-gray-500 text-sm mt-2 mb-3">
+                                Natoque etiam pharetra habitant; sollicitudin
+                                elit odio dictum.
+                            </p>
+                            <a
+                                href="singleblog.html"
+                                class="text-gray-600 italic text-sm hover:text-primary transition">Read
+                                More..</a>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="relative group w-full max-w-sm mx-auto">
+                        <!-- Image -->
+                        <div class="relative overflow-hidden rounded-t-lg">
+                            <img
+                                src="./assets/about-nails.png"
+                                alt="Best Hair Care Tips"
+                                class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105" />
+
+                            <!-- Views Badge -->
+                            <div
+                                class="absolute top-3 left-3 bg-pink-100 text-primary text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                                <img src="./assets/view-icon.svg" alt="Views"
+                                    class="w-4 h-4" />
+                                1002 Views
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="bg-white text-center border border-gray-200 rounded-b-lg shadow-sm p-5 -mt-3 relative z-10">
+                            <p class="text-sm text-primary font-semibold mb-1">7
+                                SEP, 2025</p>
+                            <h3
+                                class="font-display text-lg md:text-xl font-semibold text-gray-800 hover:text-primary transition">
+                                Popular Nail Stamping Steps.
+                            </h3>
+                            <p class="text-gray-500 text-sm mt-2 mb-3">
+                                Natoque etiam pharetra habitant; sollicitudin
+                                elit odio dictum.
+                            </p>
+                            <a
+                                href="singleblog.html"
+                                class="text-gray-600 italic text-sm hover:text-primary transition">Read
+                                More..</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card -->
+                    <div class="relative group w-full max-w-sm mx-auto">
+                        <!-- Image -->
+                        <div class="relative overflow-hidden rounded-t-lg">
+                            <img
+                                src="./assets/haircut.png"
+                                alt="Best Hair Care Tips"
+                                class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105" />
+
+                            <!-- Views Badge -->
+                            <div
+                                class="absolute top-3 left-3 bg-pink-100 text-primary text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                                <img src="./assets/view-icon.svg" alt="Views"
+                                    class="w-4 h-4" />
+                                1002 Views
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="bg-white text-center border border-gray-200 rounded-b-lg shadow-sm p-5 -mt-3 relative z-10">
+                            <p class="text-sm text-primary font-semibold mb-1">7
+                                SEP, 2025</p>
+                            <h3
+                                class="font-display text-lg md:text-xl font-semibold text-gray-800 hover:text-primary transition">
+                                From Messy Hair to Classy.
+                            </h3>
+                            <p class="text-gray-500 text-sm mt-2 mb-3">
+                                Natoque etiam pharetra habitant; sollicitudin
+                                elit odio dictum.
+                            </p>
+                            <a
+                                href="singleblog.html"
+                                class="text-gray-600 italic text-sm hover:text-primary transition">Read
+                                More..</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card -->
+                    <div class="relative group w-full max-w-sm mx-auto">
+                        <!-- Image -->
+                        <div class="relative overflow-hidden rounded-t-lg">
+                            <img
+                                src="./assets/haircutstyle.png"
+                                alt="Best Hair Care Tips"
+                                class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105" />
+
+                            <!-- Views Badge -->
+                            <div
+                                class="absolute top-3 left-3 bg-pink-100 text-primary text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                                <img src="./assets/view-icon.svg" alt="Views"
+                                    class="w-4 h-4" />
+                                1002 Views
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="bg-white text-center border border-gray-200 rounded-b-lg shadow-sm p-5 -mt-3 relative z-10">
+                            <p class="text-sm text-primary font-semibold mb-1">7
+                                SEP, 2025</p>
+                            <h3
+                                class="font-display text-lg md:text-xl font-semibold text-gray-800 hover:text-primary transition">
+                                Best Hair Care Tips.
+                            </h3>
+                            <p class="text-gray-500 text-sm mt-2 mb-3">
+                                Natoque etiam pharetra habitant; sollicitudin
+                                elit odio dictum.
+                            </p>
+                            <a
+                                href="singleblog.html"
+                                class="text-gray-600 italic text-sm hover:text-primary transition">Read
+                                More..</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Sidebar -->
+                <aside class="space-y-8">
+                    <!-- Search -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <h3
+                            class="font-display text-lg font-semibold text-gray-800 mb-4">Search
+                            Blog</h3>
+                        <div class="relative">
+                            <input type="text" placeholder="Search Keyword"
+                                class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm focus:ring-primary focus:border-primary outline-none">
+                            <img src="./assets/Group.svg" alt="Search"
+                                class="absolute right-3 top-2.5 w-5 h-5 text-gray-400">
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <h3
+                            class="font-display text-lg font-semibold text-gray-800 mb-4">Categories</h3>
+                        <ul class="space-y-3 text-gray-700 font-sans text-sm">
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category" checked
+                                        class="text-primary focus:ring-primary">
+                                    <span>Hair</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Spa</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Nail</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Beauty</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Massage</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <h3
+                            class="font-display text-lg font-semibold text-gray-800 mb-4">Social
+                            Share</h3>
+                        <div class="flex gap-3">
+                            <a href="#">
+                                <img src="./assets/fb.svg" alt="Facebook"
+                                    class="w-14 h-14">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/insta.svg" alt="Instagram"
+                                    class="w-14 h-14">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/x.svg" alt="X"
+                                    class="w-14 h-14">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/linkedin.svg" alt="LinkedIn"
+                                    class="w-14 h-14">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/youtube.svg" alt="LinkedIn"
+                                    class="w-14 h-14">
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+        <!-- Booking Schedule end -->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>

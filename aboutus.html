@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>About Us | Lamasat Beauty Salon</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F33FA2",
+              "medium-gray": "#9CA3AF",
+              "light-gray": "#F3F4F6",
+            },
+            fontFamily: {
+              display: ['"Playfair Display"', "serif"],
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    </head>
+
+    <body class="font-sans text-gray-800 bg-white">
+        <!-- HEADER -->
+        <div id="header-placeholder"></div>
+        <!-- HERO -->
+        <section
+            class="relative h-[40vh] md:h-[40vh] flex items-center justify-center">
+            <img
+                src="./assets/about-banner.png"
+                alt="About Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 "></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    About <span class="text-primary italic">Us</span>
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">
+                    Home <span class="text-primary">→</span> About Us
+                </p>
+            </div>
+        </section>
+
+        <!-- JOURNEY SECTION -->
+        <section class="max-w-screen-xl mx-auto px-4 py-20">
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                Our <span class="text-primary italic">Journey</span> of
+                <span class="text-primary italic">Excellence</span> and
+                Achievements
+            </h2>
+
+            <div class="grid md:grid-cols-2 items-center gap-12">
+                <!-- Left image -->
+                <div class="flex justify-center">
+                    <img
+                        src="./assets/about-haircut.png"
+                        alt="Salon" />
+                </div>
+
+                <!-- Right Stats -->
+                <div class="space-y-4">
+                    <!-- Card 1 -->
+                    <div
+                        class="accordion bg-primary text-white rounded-lg overflow-hidden cursor-pointer transition-all">
+                        <button
+                            class="w-full flex justify-between items-center p-6 font-display text-left text-lg md:text-xl font-medium"
+                            onclick="toggleAccordion(this)">
+                            <span><span
+                                    class="text-3xl font-bold mr-2">150+</span>International
+                                Branches</span>
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="hidden px-6 pb-6 text-base font-sans font-medium text-gray-700">
+                            Integer scelerisque tortor arcu, at tincidunt nisi
+                            vehicula ut. Cras vitae ligula
+                            mattis, consectetur justo in, cursus erat.
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="accordion bg-primary text-white rounded-lg overflow-hidden cursor-pointer transition-all">
+                        <button
+                            class="w-full flex justify-between items-center p-6 font-display text-left text-lg md:text-xl font-medium"
+                            onclick="toggleAccordion(this)">
+                            <span><span
+                                    class="text-3xl font-bold mr-2">50K</span>Happy
+                                Clients World Wide</span>
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="hidden px-6 pb-6 text-base font-sans font-medium text-gray-700">
+                            Donec auctor elit in urna sollicitudin, vel mattis
+                            nisl eleifend. Nulla facilisi.
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="accordion bg-primary text-white rounded-lg overflow-hidden cursor-pointer transition-all">
+                        <button
+                            class="w-full flex justify-between items-center p-6 font-display text-left text-lg md:text-xl font-medium"
+                            onclick="toggleAccordion(this)">
+                            <span><span
+                                    class="text-3xl font-bold mr-2">20+</span>Years
+                                of in Field Experience</span>
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="hidden px-6 pb-6 text-base font-sans font-medium text-gray-700">
+                            Nunc cursus, nulla sed mattis imperdiet, eros lorem
+                            gravida purus, nec ultricies
+                            mi mi at est.
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="accordion bg-primary text-white rounded-lg overflow-hidden cursor-pointer transition-all">
+                        <button
+                            class="w-full flex justify-between items-center p-6 font-display text-left text-lg md:text-xl font-medium"
+                            onclick="toggleAccordion(this)">
+                            <span><span
+                                    class="text-3xl font-bold mr-2">90%</span>Positive
+                                Client Reviews</span>
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="hidden px-6 pb-6 text-base font-sans font-medium text-gray-700">
+                            Phasellus ut sapien tristique, dignissim neque sit
+                            amet, interdum magna.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STYLE & GORGEOUS SECTION -->
+            <section class="bg-pink-50 py-20">
+                <div
+                    class="max-w-screen-xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Left -->
+                    <div>
+                        <p
+                            class="font-sans font-semibold text-sm uppercase text-gray-600">
+                            Achieve Flawless Style
+                        </p>
+                        <h2
+                            class="font-display text-4xl md:text-5xl mt-2 leading-snug">
+                            Style, Set & Stay <span
+                                class="text-primary italic">Gorgeous</span> with
+                            Our
+                            Perfect <span class="text-primary italic">Salon Home
+                                Services!</span>
+                        </h2>
+                        <p class="mt-4 text-gray-600 font-semibold">
+                            Vestibulum congue, sapien a sollicitudin euismod,
+                            lorem
+                            ex auctor arcu, eget
+                            convallis mauris nisi sagittis dui. Ut nec laoreet
+                            ante.
+                            Duis ultrices congue libero.
+                        </p>
+
+                        <div
+                            class="mt-6 grid grid-cols-2 gap-4 font-display text-lg">
+                            <p><span
+                                    class="text-primary italic">Professional</span>
+                                Styling</p>
+                            <p><span
+                                    class="text-primary italic">Personalized</span>
+                                Care</p>
+                            <p><span class="text-primary italic">Premium</span>
+                                Products</p>
+                            <p><span class="text-primary italic">Relax &
+                                    Convenience</span></p>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap items-center gap-6">
+                            <a
+                                href="#"
+                                class="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3">
+                                <img src="./assets/Vector (1).svg"
+                                    class="w-6" />
+                                <span class="font-display font-bold">Book a
+                                    Discovery Call</span>
+                            </a>
+                            <div class="flex items-center gap-3">
+                                <div class="bg-primary p-3 rounded-lg">
+                                    <img src="./assets/Layer_1.svg"
+                                        class="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-lg">+971 4 XXX
+                                        XXXX</p>
+                                    <p class="text-medium-gray text-sm">Call Us
+                                        Anytime</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div>
+                        <img
+                            src="./assets/about-nails.png"
+                            alt="Nails"
+                            class="rounded-lg shadow-lg w-full h-auto" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- VISION & MISSION -->
+            <section class="py-20 text-center max-w-screen-md mx-auto px-4">
+                <h2 class="font-display text-4xl md:text-5xl mb-6">
+                    Our <span class="text-primary italic">Vision</span> and
+                    <span class="text-primary italic">Mission</span>
+                </h2>
+                <p class="text-gray-600 font-semibold">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printea galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, bap into electronic
+                    typesetting, remaig essen0s with them.
+                </p>
+            </section>
+
+            <section id="section-process" class="bg-white py-20 md:py-24">
+                <div class="max-w-screen-xl mx-auto px-4 jus text-center">
+                    <p class="font-sans font-semibold text-xl">WHY CHOOSE US</p>
+                    <h2
+                        class="mt-2 font-display font-medium text-4xl md:text-5xl">
+                        Our <span class="italic text-primary">Styling</span>
+                        Process
+                    </h2>
+                    <p
+                        class="mt-6 font-sans font-semibold text-lg text-medium-gray max-w-3xl mx-auto">
+                        Posuere pharetra pharetra ut eros volutpat ridiculus
+                        feugiat. Diam dignissim magna sapien curabitur malesuad.
+                    </p>
+
+                    <!-- Process Steps -->
+                    <div
+                        class="mt-16 flex flex-col lg:flex-row items-center lg:items-baseline justify-between  gap-10 lg:gap-0 relative">
+
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center  relative">
+                            <img src="./assets/img-1 1.png" alt="Consultation"
+                                class="w-36 h-36 rounded-full object-cover z-10" />
+                            <h3
+                                class="mt-6 font-display font-medium text-2xl">Consultation</h3>
+                            <p
+                                class="mt-2 font-sans font-semibold text-base text-medium-gray">Senectus
+                                justo lacinia aliquet tempus.</p>
+                        </div>
+
+                        <!-- Arrow 1 -->
+                        <img src="./assets/arrow spiral.svg" alt
+                            class="hidden lg:block  w-32 xl:w-30 z-20" />
+
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-center relative ">
+                            <img src="./assets/img-2 1.png" alt="Pre-Treatment"
+                                class="w-36 h-36 rounded-full object-cover z-10" />
+                            <h3
+                                class="mt-6 font-display font-medium text-2xl">Pre-Treatment</h3>
+                            <p
+                                class="mt-2 font-sans font-semibold text-base text-medium-gray">Placerat
+                                dictum taciti ex augue.</p>
+                        </div>
+
+                        <!-- Arrow 2 -->
+                        <img src="./assets/arrow spiral.svg" alt
+                            class="hidden lg:block w-32 xl:w-30 z-20" />
+
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-center relative ">
+                            <img src="./assets/img-3 1.png" alt="Post-Treatment"
+                                class="w-36 h-36 rounded-full object-cover z-10" />
+                            <h3
+                                class="mt-6 font-display font-medium text-2xl">Post-Treatment</h3>
+                            <p
+                                class="mt-2 font-sans font-semibold text-base text-medium-gray">Fames
+                                vehicula phasellus turpis.</p>
+                        </div>
+
+                        <!-- Arrow 3 -->
+                        <img src="./assets/arrow spiral.svg" alt
+                            class="hidden lg:block  w-32 xl:w-30 z-20" />
+
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-center relative ">
+                            <img src="./assets/img-4 1.png" alt="Follow-Up"
+                                class="w-36 h-36 rounded-full object-cover z-10" />
+                            <h3
+                                class="mt-6 font-display font-medium text-2xl">Follow-Up</h3>
+                            <p
+                                class="mt-2 font-sans font-semibold text-base text-medium-gray">Diam
+                                congue hendrerit blandit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div
+                        class="mt-16 flex flex-col sm:flex-row justify-center items-center gap-8">
+                        <a
+                            href="#"
+                            class="bg-black text-white font-display font-extrabold text-lg rounded-lg px-6 py-3 flex items-center gap-3 shadow-lg hover:bg-gray-800 transition">
+                            <img src="./assets/Vector (1).svg"
+                                alt="Calendar icon"
+                                class="w-6 h-auto" />
+                            <span>Book a Discovery Call</span>
+                        </a>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary p-3.5 rounded-lg">
+                                <img src="./assets/Layer_1.svg" alt="Phone icon"
+                                    class="w-7 h-auto" />
+                            </div>
+                            <div class="text-left">
+                                <p class="font-sans font-semibold text-lg">+971
+                                    4
+                                    XXX XXXX</p>
+                                <p
+                                    class="font-sans font-semibold text-lg text-medium-gray">Call
+                                    Us Anytime</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+            <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+            <script src="./assets/js/common.js"></script>
+        </body>
+    </html>

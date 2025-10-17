@@ -1,0 +1,92 @@
+<header id="siteHeader" class="bg-white sticky top-0 z-50 transition-shadow">
+    <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex items-center justify-between h-20 md:h-24">
+            <!-- Left: Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html"
+                    class="font-semibold hover:text-primary">HOME</a>
+                <a href="aboutus.html"
+                    class="font-semibold hover:text-primary">ABOUT</a>
+                <a href="menservice.html"
+                    class="font-semibold hover:text-primary">SERVICES</a>
+                <a href="blogs.html"
+                    class="font-sans font-semibold hover:text-primary transition">BLOG</a>
+                <a href="#"
+                    class="font-sans font-semibold hover:text-primary transition">CONTACT</a>
+            </nav>
+
+            <!-- Center: Logo -->
+            <a href="index.html" class="absolute left-1/2 -translate-x-1/2">
+                <img src="./assets/salon-Logo 1.png"
+                    alt="Lamasat Beauty Salon Logo"
+                    class="h-14 md:h-20 w-auto" />
+            </a>
+
+            <!-- Right: Desktop Actions -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="signin.html"
+                    class="font-sans font-semibold hover:text-primary transition">Login
+                    & Register</a>
+                <a href="#"><img src="./assets/Group.svg" alt="Search"
+                        class="w-6 h-6" /></a>
+                <a href="#"
+                    class="bg-primary text-white font-bold text-base rounded-full px-6 py-2.5">Get
+                    App</a>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/A Global Media Company - iconSvg.co.svg"
+                        alt="Global" class="w-5 h-5" />
+                    <a href="#" class="font-sans">العربية</a>
+                </div>
+            </div>
+
+            <!-- Mobile: Hamburger -->
+            <button id="mobileMenuBtn"
+                class="md:hidden p-2 rounded-lg border border-gray-200"
+                aria-label="Open menu" aria-expanded="false">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu"
+        class="md:hidden hidden border-t border-gray-100 bg-white">
+        <nav class="max-w-screen-xl mx-auto px-4 py-4 space-y-1">
+            <a
+                class="block px-3 py-3 rounded-lg font-semibold text-primary bg-light-gray"
+                href="index.html">HOME</a>
+            <a
+                class="block px-3 py-3 rounded-lg font-semibold hover:bg-light-gray"
+                href="aboutus.html">ABOUT</a>
+            <a
+                class="block px-3 py-3 rounded-lg font-semibold hover:bg-light-gray"
+                href="menservice.html">SERVICES</a>
+            <a
+                class="block px-3 py-3 rounded-lg font-semibold hover:bg-light-gray"
+                href="blogs.html">BLOG</a>
+            <a
+                class="block px-3 py-3 rounded-lg font-semibold hover:bg-light-gray"
+                href="#">CONTACT</a>
+
+            <div class="mt-3 h-px bg-gray-100"></div>
+
+            <a
+                class="block px-3 py-3 rounded-lg font-semibold hover:bg-light-gray"
+                href="signin.html">Login & Register</a>
+            <div class="flex items-center justify-between px-3 py-2">
+                <a href="#" class="flex items-center gap-2">
+                    <img src="./assets/Group.svg" alt="Search"
+                        class="w-5 h-5" />
+                    <span class="font-semibold">Search</span>
+                </a>
+                <a href="#"
+                    class="bg-primary text-white font-bold rounded-full px-4 py-2">Get
+                    App</a>
+            </div>
+        </nav>
+    </div>
+</header>

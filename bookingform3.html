@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Booking Schedule | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+    <body class="font-sans  bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Booking Schedule
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">Home <span
+                        class="text-primary">→</span> Booking Schedule</p>
+            </div>
+        </section>
+        <!-- Booking Schedule start -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto px-4">
+
+                <!-- Address Card -->
+                <div
+                    class="border border-blue-500 bg-gray-50 rounded-lg p-5 flex flex-col justify-between mb-4">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3
+                                class="font-semibold text-gray-800 flex items-center gap-2">
+                                <img src="./assets/location.svg" alt
+                                    class="w-5 h-5" />
+                                Your Address
+                            </h3>
+                            <a href="bookingform1.html"
+                                class="text-gray-500 bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold hover:bg-gray-200 inline-flex items-center">
+                                Edit
+                            </a>
+                        </div>
+                        <div class="ml-7">
+                            <p class="font-semibold">Rehman</p>
+                            <p class="text-gray-600 text-sm">122, abc, Riyadh -
+                                pin: 256891</p>
+                            <p
+                                class="text-gray-600 text-sm flex items-center mt-1">
+                                <img src="./assets/mobile.svg" alt
+                                    class="w-4 h-4 mr-2" /> +966 xxxxxxxx
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selected Service -->
+                <div
+                    class="border border-blue-500 bg-gray-50 rounded-lg p-5 flex flex-col justify-between mb-8">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <img src="./assets/haircut.png"
+                                alt="Haircut & Styling"
+                                class="w-20 h-20 object-cover rounded-lg" />
+                            <div>
+                                <h3
+                                    class="font-semibold text-gray-800 text-base md:text-lg">
+                                    <a href="singleproduct.html"
+                                        class="text-primary hover:underline">Haircut
+                                        & Styling</a>
+                                </h3>
+
+                                <div
+                                    class="flex items-center text-gray-600 text-sm">
+                                    <img
+                                        src="./assets/time.svg"
+                                        alt="location icon"
+                                        class="w-7 h-5 " />
+                                    <span>9AM–10PM, Mon–Sun</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    <span class="text-gray-500">(Estimated Time:
+                                        30mins)</span>
+                                </p>
+                                <p class="text-primary font-bold mt-1">$149</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <p
+                                class="text-yellow-500 font-medium text-sm flex items-center gap-1">
+                                ⭐ <span>4.5 (326)</span>
+                            </p>
+                            <a href="bookingform2.html"
+                                class="bg-primary text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-pink-600">
+                                Change Service
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Section -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Select
+                        Professionals</h3>
+
+                    <div
+                        class="border border-gray-200 bg-gray-50 rounded-lg p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/haircutstyle.png" alt="Zainab"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4
+                                    class="font-semibold text-gray-800">Zainab</h4>
+                                <p class="text-gray-500 text-sm">Hair
+                                    specialist</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <p
+                                class="text-yellow-500 font-medium text-sm flex items-center gap-1">
+                                ⭐ <span>4.5 (326)</span>
+                            </p>
+                            <button
+                                class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-gray-200">Change
+                                Professional</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue Button -->
+                <div class="text-center mt-10">
+                    <a href="booking.html"
+                        class="inline-block bg-primary text-white font-semibold rounded-full px-10 py-3 hover:bg-pink-600 transition">
+                        Select & Continue
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Booking Schedule end -->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>

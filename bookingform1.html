@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Booking Schedule | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+    <body class="font-sans  bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Booking Schedule
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">Home <span
+                        class="text-primary">→</span> Booking Schedule</p>
+            </div>
+        </section>
+        <!-- Booking Schedule start -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2
+                    class="text-2xl md:text-3xl font-display font-semibold mb-10">
+                    Welcome, <span class="italic text-gray-600">Rehman</span>
+                </h2>
+
+                <!-- Address Grid -->
+                <form class="grid md:grid-cols-2 gap-6 mb-10 text-left">
+
+                    <!-- Card 1 -->
+                    <label
+                        class="relative border border-gray-300 rounded-lg p-5 cursor-pointer hover:border-primary transition flex gap-3 items-start">
+                        <input type="radio" name="address" checked
+                            class="mt-1 accent-primary w-4 h-4 cursor-pointer peer">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3
+                                    class="font-semibold text-gray-800 flex items-center gap-2">
+                                    <img src="./assets/location.svg" alt
+                                        class="w-5 h-5" />
+                                    Your Address
+                                </h3>
+                                <button type="button"
+                                    class="text-gray-500 bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold hover:bg-gray-200">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="ml-7">
+                                <p
+                                    class=" text-gray-600 font-semibold">Rehman</p>
+                                <p class="text-gray-600 text-sm">122, abc,
+                                    Riyadh - pin: 256891</p>
+                            </div>
+                            <h3
+                                class=" text-gray-600 flex items-center gap-2">
+                                <img src="./assets/mobile.svg" alt
+                                    class="w-5 h-5" />
+                                +966 xxxxxxxx
+                            </h3>
+                        </div>
+                    </label>
+
+                    <!-- Card 2 -->
+                    <label
+                        class="relative border border-gray-300 rounded-lg p-5 cursor-pointer hover:border-primary transition flex gap-3 items-start">
+                        <input type="radio" name="address"
+                            class="mt-1 accent-primary w-4 h-4 cursor-pointer peer">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3
+                                    class="font-semibold text-gray-800 flex items-center gap-2">
+                                    <img src="./assets/location.svg" alt
+                                        class="w-5 h-5" />
+                                    Your Address
+                                </h3>
+                                <button type="button"
+                                    class="text-gray-500 bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold hover:bg-gray-200">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="ml-7">
+                                <p
+                                    class=" text-gray-600 font-semibold">Rehman</p>
+                                <p class="text-gray-600 text-sm">223, R, Rihana
+                                    , Riyadh - pin- 256441</p>
+                            </div>
+                            <h3
+                                class=" text-gray-600 flex items-center gap-2">
+                                <img src="./assets/mobile.svg" alt
+                                    class="w-5 h-5" />
+                                +966 xxxxxxxx
+                            </h3>
+                        </div>
+                    </label>
+
+                    <!-- Card 3 -->
+                    <label
+                        class="relative border border-gray-300 rounded-lg p-5 cursor-pointer hover:border-primary transition flex gap-3 items-start">
+                        <input type="radio" name="address"
+                            class="mt-1 accent-primary w-4 h-4 cursor-pointer peer">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3
+                                    class="font-semibold text-gray-800 flex items-center gap-2">
+                                    <img src="./assets/location.svg" alt
+                                        class="w-5 h-5" />
+                                    Your Address
+                                </h3>
+                                <button type="button"
+                                    class="text-gray-500 bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold hover:bg-gray-200">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="ml-7">
+                                <p
+                                    class=" text-gray-600 font-semibold">Rehman</p>
+                                <p class="text-gray-600 text-sm">223, R, Rihana
+                                    , Riyadh - pin- 256441</p>
+                            </div>
+                            <h3
+                                class=" text-gray-600 flex items-center gap-2">
+                                <img src="./assets/mobile.svg" alt
+                                    class="w-5 h-5" />
+                                +966 xxxxxxxx
+                            </h3>
+                        </div>
+                    </label>
+
+                    <!-- Add New -->
+                    <div
+                        class="border-2 border-dashed border-gray-300 rounded-lg flex flex-col justify-center items-center cursor-pointer hover:border-primary transition py-12">
+                        <span class="text-4xl text-gray-400 mb-2">+</span>
+                        <p class="font-semibold text-gray-600">Add New
+                            Address</p>
+                    </div>
+                </form>
+
+                <!-- Continue Button -->
+                <div class="text-center">
+                    <a href="booking.html"
+                        class="inline-block bg-primary text-white font-semibold rounded-full px-10 py-3 hover:bg-pink-600 transition">
+                        Select & Continue
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Booking Schedule end -->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Blogs | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+    <body class="font-sans  bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Current News
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">Home <span
+                        class="text-primary">→</span> Curent News</p>
+            </div>
+        </section>
+        <!-- Booking Schedule start -->
+        <section class="py-20 bg-white">
+            <div
+                class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <!-- Left: Blog Content -->
+                <div class="lg:col-span-2">
+                    <!-- Date -->
+                    <span
+                        class="inline-block bg-pink-100 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                        7 SEP, 2025
+                    </span>
+
+                    <!-- Featured Image -->
+                    <img src="./assets/haircut.png"
+                        alt="Best Hair Care Tips"
+                        class="w-full rounded-lg mb-6">
+
+                    <!-- Title -->
+                    <h2
+                        class="font-display text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                        Best Hair Care Tips.
+                    </h2>
+
+                    <!-- Paragraphs -->
+                    <p class="text-gray-600 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident.
+                    </p>
+
+                    <!-- Highlight Quote -->
+                    <blockquote
+                        class="border-l-4 border-primary pl-5 italic text-gray-700 text-lg my-6">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.”
+                    </blockquote>
+
+                    <p class="text-gray-600 mb-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+
+                    <!-- Meta Info -->
+                    <div
+                        class="flex flex-wrap items-center justify-between border-t border-gray-200 pt-5 mt-8 text-sm text-gray-600">
+                        <div class="flex items-center gap-6 mb-3 md:mb-0">
+                            <span class="flex items-center gap-1"><img
+                                    src="./assets/view-icon.svg"
+                                    class="w-4 h-4">1002 Views</span>
+                            <span class="flex items-center gap-1"><img
+                                    src="./assets/like.svg" class="w-4 h-4">33
+                                Like</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="font-semibold text-gray-700">Share</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#">
+                                    <img src="./assets/fb.svg" alt="Facebook"
+                                        class="w-10 h-10">
+                                </a>
+                                <a href="#"><img
+                                        src="./assets/insta.svg"
+                                        class="w-10 h-10"></a>
+                                <a href="#"><img
+                                        src="./assets/x.svg"
+                                        class="w-10 h-10"></a>
+                                <a href="#"><img
+                                        src="./assets/linkedin.svg"
+                                        class="w-10 h-10"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <p class="text-gray-500 text-sm mt-4">
+                        <span class="font-semibold text-gray-700">Tags:</span>
+                        Fashion, Beauty, Nails, Spa, Massage
+                    </p>
+
+                    <!-- Comments -->
+                    <div class="mt-10">
+                        <h3
+                            class="font-display text-xl font-semibold text-gray-800 mb-6">Comments</h3>
+
+                        <!-- Comment -->
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <img src="./assets/avatar.png" alt="Liza"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div
+                                        class="flex items-center justify-between">
+                                        <h4
+                                            class="font-semibold text-primary">Liza
+                                            D’Souza</h4>
+                                        <span class="text-sm text-gray-500">14
+                                            Sep, 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">“A
+                                        professional haircut and styling service
+                                        designed to enhance your personality,
+                                        ensuring your look stays sharp, trendy,
+                                        and perfectly tailored to your face
+                                        shape.”</p>
+                                    <a href="#"
+                                        class="text-sm text-primary font-medium hover:underline mt-1 inline-block">Reply</a>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <img src="./assets/avatar.png" alt="Liza"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div
+                                        class="flex items-center justify-between">
+                                        <h4
+                                            class="font-semibold text-primary">Liza
+                                            D’Souza</h4>
+                                        <span class="text-sm text-gray-500">16
+                                            Sep, 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">“A
+                                        professional haircut and styling service
+                                        designed to enhance your personality,
+                                        ensuring your look stays sharp, trendy,
+                                        and perfectly tailored to your face
+                                        shape.”</p>
+                                    <a href="#"
+                                        class="text-sm text-primary font-medium hover:underline mt-1 inline-block">Reply</a>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <img src="./assets/avatar.png" alt="Liza"
+                                    class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div
+                                        class="flex items-center justify-between">
+                                        <h4
+                                            class="font-semibold text-primary">Liza
+                                            D’Souza</h4>
+                                        <span class="text-sm text-gray-500">19
+                                            Sep, 2025</span>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-1">“A
+                                        professional haircut and styling service
+                                        designed to enhance your personality,
+                                        ensuring your look stays sharp, trendy,
+                                        and perfectly tailored to your face
+                                        shape.”</p>
+                                    <a href="#"
+                                        class="text-sm text-primary font-medium hover:underline mt-1 inline-block">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Leave Comment -->
+                        <div class="mt-10 border-t border-gray-200 pt-8">
+                            <h4
+                                class="font-display text-lg font-semibold text-gray-800 mb-6 flex items-center gap-2">
+                                <img src="./assets/comment-icon.svg"
+                                    class="w-5 h-5"> Leave a Comment
+                            </h4>
+                            <form class="space-y-5">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <input type="text" placeholder="Name"
+                                        class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-primary focus:border-primary outline-none">
+                                    <input type="email" placeholder="Email"
+                                        class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-primary focus:border-primary outline-none">
+                                </div>
+                                <textarea rows="5" placeholder="Your text"
+                                    class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-primary focus:border-primary outline-none"></textarea>
+                                <button type="submit"
+                                    class="bg-primary text-white font-semibold px-6 py-3 rounded-lg hover:bg-pink-600 transition">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar (same as Blog Page) -->
+                <aside class="space-y-8">
+                    <!-- Search -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <h3
+                            class="font-display text-lg font-semibold text-gray-800 mb-4">Search
+                            Blog</h3>
+                        <div class="relative">
+                            <input type="text" placeholder="Search Keyword"
+                                class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm focus:ring-primary focus:border-primary outline-none">
+                            <img src="./assets/Group.svg" alt="Search"
+                                class="absolute right-3 top-2.5 w-5 h-5 text-gray-400">
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <h3
+                            class="font-display text-lg font-semibold text-gray-800 mb-4">Categories</h3>
+                        <ul class="space-y-3 text-gray-700 font-sans text-sm">
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category" checked
+                                        class="text-primary focus:ring-primary">
+                                    <span>Hair</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Spa</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Nail</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Beauty</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <label
+                                    class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category"
+                                        class="text-primary focus:ring-primary">
+                                    <span>Massage</span>
+                                </label>
+                                <span>(07)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- Booking Schedule end -->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>

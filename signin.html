@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign-in | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+
+    <body class="font-sans  bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Sign in
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">Home <span
+                        class="text-primary">→</span> Sign in</p>
+            </div>
+        </section>
+        <!-- SignUp form start -->
+        <section class="py-20">
+            <div class="max-w-md mx-auto px-4 text-center">
+                <h2
+                    class="font-display text-3xl md:text-4xl font-semibold mb-2">
+                    Welcome to Lamasat
+                </h2>
+                <p class="text-gray-500 mb-8">
+                    Login or create an account to book and manage your
+                    appointments.
+                </p>
+
+                <form class="space-y-5 text-left">
+
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone"
+                            class="block text-sm font-semibold text-gray-700 mb-1">Phone
+                            number</label>
+                        <div
+                            class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+                            <span
+                                class="bg-light-gray px-4 text-gray-500"><img
+                                    src="./assets/flag.png" alt="Phone icon"
+                                    class="h-7" /></span>
+                            <input id="phone" type="tel"
+                                placeholder="Enter your phone number"
+                                class="w-full px-4 py-3 text-gray-700 focus:ring-primary focus:border-primary outline-none" />
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div>
+                        <label for="address"
+                            class="block text-sm font-semibold text-gray-700 mb-1">Your
+                            password</label>
+                        <input id="address" type="text"
+                            placeholder="Enter your password"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 focus:ring-primary focus:border-primary" />
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition">
+                        Login
+                    </button>
+                    <div class="flex justify-between">
+                        <p class="text-center text-sm text-gray-600">
+                            <a href="forgotpassword.html"
+                                class=" font-semibold hover:underline">Forgot
+                                Password?</a>
+                        </p>
+                        <p class="text-center text-sm text-gray-600">
+                            Don’t have an account?
+                            <a href="signup.html"
+                                class="text-primary font-semibold hover:underline">Register
+                                Here</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- SignUp form End-->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>

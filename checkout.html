@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Appointment Checkout | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+
+    <body class="font-sans text-[#D9D9D9] bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Appointment <span
+                        class="text-primary italic">Checkout</span>
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">
+                    Home <span class="text-primary">→</span> Appointment
+                    Checkout
+                </p>
+            </div>
+        </section>
+        <!-- Appointment Checkout start -->
+        <section class="py-20">
+            <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+
+                <!-- LEFT COLUMN -->
+                <div class="space-y-6">
+                    <!-- Address -->
+                    <div class="border border-gray-200 rounded-xl p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3
+                                class="font-semibold text-gray-800 flex items-center gap-2">
+                                <img src="./assets/location.svg" alt
+                                    class="w-5 h-5" />
+                                Your Address
+                            </h3>
+                            <button
+                                class="text-primary font-semibold text-sm hover:underline">Edit</button>
+                        </div>
+                        <div class="ml-7">
+                            <p class="font-semibold">Rehman</p>
+                            <p class="text-gray-600 text-sm">122, abc, Riyadh -
+                                pin: 256891</p>
+                            <p
+                                class="text-gray-600 text-sm flex items-center mt-1">
+                                <img src="./assets/mobile.svg" alt
+                                    class="w-4 h-4 mr-2" /> +966 xxxxxxxx
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Selected Service -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-4 flex items-center gap-4">
+                        <img src="./assets/haircut.png" alt="Haircut & Styling"
+                            class="w-24 h-24 object-cover rounded-lg" />
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-primary">Haircut &
+                                Styling</h3>
+                            <p class="text-gray-600 text-sm">
+                                📅 Oct 04, 2025, 11:00am <br />
+                                <span class="text-gray-500">(Estimated Time:
+                                    30mins)</span>
+                            </p>
+                            <div class="flex items-center justify-between mt-2">
+                                <p
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">$149</p>
+                                <p class="text-yellow-500 text-sm">⭐ 4.5
+                                    (326)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/haircutstyle.png" alt="Staff"
+                                class="w-12 h-12 rounded-full object-cover" />
+                            <div>
+                                <h4
+                                    class="font-semibold text-gray-800">Zainab</h4>
+                                <p class="text-gray-500 text-sm">Hair
+                                    specialist</p>
+                            </div>
+                        </div>
+                        <p class="text-yellow-500 text-sm">⭐ 4.5 (326)</p>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div
+                    class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm">
+                    <h3 class="font-display text-2xl font-semibold mb-4">Receipt
+                        Details</h3>
+                    <div class="divide-y divide-gray-100">
+                        <!-- Row 1 -->
+                        <div
+                            class="py-3 flex justify-between text-sm font-semibold text-gray-800">
+                            <span>Service</span>
+                            <span>Professional</span>
+                            <span>Total</span>
+                        </div>
+                        <div
+                            class="py-3 flex justify-between items-center text-sm text-gray-700">
+                            <span>Haircut & Styling</span>
+                            <span>Zainab</span>
+                            <span class="font-semibold">$149</span>
+                        </div>
+                    </div>
+
+                    <!-- Coupon -->
+                    <div class="mt-6">
+                        <label
+                            class="block font-semibold text-gray-700 mb-2">Add
+                            coupon</label>
+                        <div class="flex gap-3">
+                            <input
+                                type="text"
+                                placeholder="Enter coupon code"
+                                class="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-sm focus:ring-primary focus:border-primary" />
+                            <button
+                                class="bg-primary text-white px-5 py-2 rounded-lg font-semibold hover:bg-pink-600 transition text-sm">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Terms -->
+                    <div class="mt-5 flex items-start gap-2">
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            class="mt-1 h-4 w-4 rounded border-primary text-primary focus:ring-primary" />
+                        <label for="terms" class="text-sm text-gray-700">
+                            I have read and agree to the <span
+                                class="text-primary font-semibold">Terms &
+                                Conditions</span>
+                        </label>
+                    </div>
+
+                    <!-- Totals -->
+                    <div
+                        class="mt-6 border-t border-gray-200 pt-4 text-sm text-gray-700">
+                        <div class="flex justify-between py-1">
+                            <span>Total</span>
+                            <span>$149.00</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span>Delivery charge</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span>VAT value</span>
+                            <span>$49.00</span>
+                        </div>
+                        <div
+                            class="flex justify-between py-2 border-t border-gray-100 mt-2 font-semibold text-gray-900">
+                            <span>Grand total</span>
+                            <span>$198.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Payment Button -->
+                    <button
+                        class="mt-6 w-full bg-primary text-white py-3 rounded-full font-semibold text-lg hover:bg-pink-600 transition">
+                        Complete Payment
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Appointment Checkout end -->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>

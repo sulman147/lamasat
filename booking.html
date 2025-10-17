@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Booking Schedule | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F33FA2",
+                        "medium-gray": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    </head>
+    <body class="font-sans  bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- HERO -->
+        <section class="relative h-[40vh] flex items-center justify-center">
+            <img src="./assets/about-banner.png" alt="Men’s Banner"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative text-center text-white">
+                <h1 class="font-display text-5xl md:text-6xl font-semibold">
+                    Booking Schedule
+                </h1>
+                <p class="mt-2 font-sans font-semibold text-lg">Home <span
+                        class="text-primary">→</span> Booking Schedule</p>
+            </div>
+        </section>
+        <!-- Booking Schedule start -->
+        <section class="py-20">
+            <div class="max-w-3xl mx-auto px-4">
+                <!-- Address and Service -->
+                <div
+                    class="bg-white shadow-md rounded-xl p-5 mb-6 grid md:grid-cols-2 gap-5">
+                    <!-- Address -->
+                    <div
+                        class="border border-gray-200 rounded-lg p-4 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <h3
+                                    class="font-semibold text-gray-800 flex items-center gap-2">
+                                    <img src="./assets/location.svg" alt
+                                        class="w-5 h-5" />
+                                    Your Address
+                                </h3>
+                                <a href="bookingform1.html"
+                                    class="text-primary font-semibold text-sm hover:underline">Edit
+                                </a>
+                            </div>
+                            <div class="items-center mb-2">
+                                <div class="items-center mb-2 ml-7">
+                                    <p class="font-semibold">Rehman</p>
+                                    <p class="text-gray-600 text-sm">122, abc,
+                                        Riyadh -
+                                        pin: 256891</p>
+
+                                </div>
+                                <p class="text-gray-600 flex text-sm"><img
+                                        src="./assets/mobile.svg" alt
+                                        class="w-5 h-5 mr-2" /> +966
+                                    xxxxxxxx</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card -->
+
+                    <div
+                        class="border border-gray-200 rounded-lg p-4 flex items-center gap-4">
+
+                        <img
+                            src="./assets/haircut.png"
+                            alt="Haircut & Styling"
+                            class="w-24 h-24 object-cover rounded-lg" />
+                        <div>
+                            <h3
+                                class="font-semibold text-gray-800 text-base md:text-lg">
+                                <a href="singleproduct.html"
+                                    class="text-primary hover:underline">Haircut
+                                    & Styling</a>
+                            </h3>
+
+                            <div
+                                class="flex items-center text-gray-600 text-sm">
+                                <img
+                                    src="./assets/time.svg"
+                                    alt="location icon"
+                                    class="w-7 h-5 " />
+                                <span>9AM–10PM, Mon–Sun</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">
+                                <span class="text-gray-500">(Estimated Time:
+                                    30mins)</span>
+                            </p>
+                            <div class="flex items-baseline justify-between">
+                                <p class="text-primary font-bold mt-1">$149</p>
+                                <a href="bookingform2.html"
+                                    class="text-primary font-semibold text-sm hover:underline">Edit
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Staff -->
+                <div
+                    class="border border-gray-200 rounded-lg p-4 flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-3">
+                        <img
+                            src="./assets/haircutstyle.png"
+                            alt="Staff"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Zainab</h4>
+                            <p class="text-gray-500 text-sm">Hair specialist</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500 text-sm">⭐ 4.5 (326)</span>
+                        <a href="bookingform3.html"
+                            class="border border-gray-300 text-gray-700 rounded-lg px-3 py-1 text-sm font-semibold hover:border-primary hover:text-primary transition">
+                            Change Professional
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Date Selection -->
+                <div class="bg-white shadow-md rounded-xl p-6 mb-6">
+                    <h3 class="font-semibold text-gray-800 mb-3">Select
+                        Date</h3>
+                    <div
+                        class="flex items-center justify-between overflow-x-auto gap-2 pb-2">
+                        <!-- Repeatable date boxes -->
+                        <button
+                            class="min-w-[80px] py-3 border border-primary text-primary font-semibold rounded-lg">
+                            Sat<br />
+                            <span class="text-2xl">04</span>
+                        </button>
+                        <button
+                            class="min-w-[80px] py-3 border border-gray-300 rounded-lg text-gray-700 hover:border-primary hover:text-primary transition">
+                            Sun<br />
+                            <span class="text-2xl">05</span>
+                        </button>
+                        <button
+                            class="min-w-[80px] py-3 border border-gray-300 rounded-lg text-gray-700 hover:border-primary hover:text-primary transition">
+                            Mon<br />
+                            <span class="text-2xl">06</span>
+                        </button>
+                        <button
+                            class="min-w-[80px] py-3 border border-gray-300 rounded-lg text-gray-700 hover:border-primary hover:text-primary transition">
+                            Tue<br />
+                            <span class="text-2xl">07</span>
+                        </button>
+                        <button
+                            class="min-w-[80px] py-3 border border-gray-300 rounded-lg text-gray-700 hover:border-primary hover:text-primary transition">
+                            Wed<br />
+                            <span class="text-2xl">08</span>
+                        </button>
+                        <button
+                            class="min-w-[80px] py-3 border border-gray-300 rounded-lg text-gray-700 hover:border-primary hover:text-primary transition">
+                            Thu<br />
+                            <span class="text-2xl">09</span>
+                        </button>
+                        <button
+                            class="min-w-[80px] py-3 border border-gray-300 rounded-lg text-gray-700 hover:border-primary hover:text-primary transition">
+                            <img src="./assets/calender.svg" alt="Calendar"
+                                class="mx-auto w-14 h-14 object-fit hover:border-primary hover:text-primary" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Time Slots -->
+                <div class="bg-white shadow-md rounded-xl p-6">
+                    <h3 class="font-semibold text-gray-800 mb-3">Select
+                        Time</h3>
+                    <div
+                        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">10:00
+                            AM</button>
+                        <button
+                            class="border border-primary bg-primary text-white py-2 rounded-lg text-sm">11:00
+                            AM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">12:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">01:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">02:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">03:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">04:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">05:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">06:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">07:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">08:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">09:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">10:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">11:00
+                            PM</button>
+                        <button
+                            class="border border-gray-300 py-2 rounded-lg text-sm hover:border-primary hover:text-primary">12:00
+                            AM</button>
+                    </div>
+                </div>
+
+                <!-- Continue Button -->
+                <div class="mt-10 text-center">
+                    <a href="checkout.html"
+                        class="inline-block bg-primary text-white font-semibold rounded-full px-10 py-3 hover:bg-pink-600 transition text-center">
+                        Select & Continue
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Booking Schedule end -->
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+      async function includeHTML(id, filePath) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const res = await fetch(filePath);
+        const html = await res.text();
+        el.innerHTML = html;
+
+        // ✅ Reinitialize header/footer scripts AFTER content is injected
+        if (id === "header-placeholder" || id === "footer-placeholder") {
+          if (typeof initCommonJS === "function") initCommonJS();
+        }
+      }
+
+      // Load shared components
+      includeHTML("header-placeholder", "./components/header.html");
+      includeHTML("footer-placeholder", "./components/footer.html");
+    </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+</html>
