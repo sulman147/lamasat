@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Reviews | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F33FA2",
+            "medium-gray": "#9CA3AF",
+            "light-gray": "#F3F4F6",
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+    </head>
+
+    <body class="font-sans bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- Reviews Page -->
+        <section class="max-w-screen-xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+
+                <!-- Sidebar -->
+                <aside class="border border-gray-200 rounded-xl p-6">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="./assets/user.png" alt="User"
+                            class="w-20 h-20 rounded-full mb-3" />
+                        <h3
+                            class="font-semibold text-lg text-gray-800">Rehman</h3>
+                        <p class="text-sm text-gray-500 mb-6">Customer Panel</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="/cutomerpanelbooking.html"
+                            class="block hover:bg-light-gray  text-gray-700 font-semibold rounded-lg px-4 py-2">Bookings</a>
+                        <a href="/reviews.html"
+                            class="block  bg-primary rounded-lg px-4 py-2 font-semibold text-white">Reviews</a>
+                        <a href="/profile.html"
+                            class="block hover:bg-light-gray rounded-lg px-4 py-2 font-semibold text-gray-700">Profile</a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="md:col-span-3">
+                    <h2
+                        class="text-2xl font-display font-semibold text-gray-800 mb-1">My
+                        All Reviews</h2>
+                    <p class="text-gray-500 text-sm mb-6">Check and manage all
+                        your reviews.</p>
+
+                    <!-- Search & Filter Bar -->
+                    <div
+                        class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+                        <div class="relative w-full sm:w-1/2">
+                            <input type="text"
+                                placeholder="Search by service or professional"
+                                class="w-full border border-gray-300 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+                            <svg
+                                class="w-5 h-5 absolute left-3 top-2.5 text-gray-400"
+                                fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                            </svg>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <button
+                                class="px-4 py-2 rounded-full text-sm font-semibold bg-primary text-white">All</button>
+                            <button
+                                class="px-4 py-2 rounded-full text-sm font-semibold border border-gray-300 hover:border-primary hover:text-primary transition">Services</button>
+                            <button
+                                class="px-4 py-2 rounded-full text-sm font-semibold border border-gray-300 hover:border-primary hover:text-primary transition">Professionals</button>
+                        </div>
+
+                        <a href="/addreview.html"
+                            class="bg-primary text-white text-sm font-semibold rounded-full px-5 py-2 hover:bg-pink-600 transition">
+                            Add Review
+                        </a>
+                    </div>
+
+                    <!-- Review Cards -->
+                    <div class="space-y-4">
+                        <!-- Service Review -->
+                        <div
+                            class="border border-gray-100 bg-gray-100 rounded-xl p-4 flex flex-col md:flex-row items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <img src="./assets/haircut.png" alt="Service"
+                                    class="w-20 h-20 rounded-lg object-cover" />
+                                <div>
+                                    <h4
+                                        class="font-semibold text-gray-800 text-base">Haircut
+                                        & Styling</h4>
+                                    <p class="text-sm text-gray-500 mb-1">14
+                                        Oct, 2025</p>
+                                    <p
+                                        class="text-gray-600 text-sm leading-snug max-w-lg">
+                                        “A professional haircut and styling
+                                        service designed to enhance your
+                                        personality,
+                                        ensuring your look stays sharp, trendy,
+                                        and perfectly tailored to your face
+                                        shape.
+                                        With expert techniques.”
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 border px-4  rounded-full bg-pink-50 border-[#D9D9D9] gap-1 self-end  md:self-center">
+
+                                <span
+                                    class="text-[#FFD700] text-2xl">★</span>
+
+                                <span
+                                    class="text-primary font-semibold">5</span>
+                            </div>
+                        </div>
+
+                        <!-- Professional Review -->
+                        <div
+                            class="border border-gray-100 bg-gray-200 rounded-xl p-4 flex flex-col md:flex-row items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <img src="./assets/haircutstyle.png"
+                                    alt="Professional"
+                                    class="w-20 h-20 rounded-lg object-cover" />
+                                <div>
+                                    <h4
+                                        class="font-semibold text-gray-800 text-base">Zainab
+                                        <span
+                                            class="bg-pink-100 text-primary text-xs px-2 py-0.5 rounded-full ml-2">Haircut
+                                            & Styling</span>
+                                    </h4>
+                                    <p class="text-sm text-gray-500 mb-1">14
+                                        Oct, 2025</p>
+                                    <p
+                                        class="text-gray-600 text-sm leading-snug max-w-lg">
+                                        “A professional haircut and styling
+                                        service designed to enhance your
+                                        personality,
+                                        ensuring your look stays sharp, trendy,
+                                        and perfectly tailored to your face
+                                        shape.
+                                        With expert techniques.”
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 border px-4  rounded-full bg-pink-50 border-[#D9D9D9] gap-1 self-end  md:self-center">
+
+                                <span
+                                    class="text-[#FFD700] text-2xl">★</span>
+
+                                <span
+                                    class="text-primary font-semibold">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Include Header/Footer -->
+        <script>
+    async function includeHTML(id, filePath) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const res = await fetch(filePath);
+      el.innerHTML = await res.text();
+      if (typeof initCommonJS === "function") initCommonJS();
+    }
+    includeHTML("header-placeholder", "./components/header.html");
+    includeHTML("footer-placeholder", "./components/footer.html");
+  </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+
+</html>

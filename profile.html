@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Profile | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F33FA2",
+            "medium-gray": "#9CA3AF",
+            "light-gray": "#F3F4F6",
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+    </head>
+
+    <body class="font-sans bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- Profile Section -->
+        <section class="max-w-screen-xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+
+                <!-- Sidebar -->
+                <aside class="border border-gray-200 rounded-xl p-6">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="./assets/user.png" alt="User"
+                            class="w-20 h-20 rounded-full mb-3" />
+                        <h3
+                            class="font-semibold text-lg text-gray-800">Rehman</h3>
+                        <p class="text-sm text-gray-500 mb-6">Customer Panel</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="customerpanel.html"
+                            class="block hover:bg-light-gray rounded-lg px-4 py-2 font-semibold text-gray-700">Bookings</a>
+                        <a href="reviews.html"
+                            class="block hover:bg-light-gray rounded-lg px-4 py-2 font-semibold text-gray-700">Reviews</a>
+                        <a href="/reviews.html"
+                            class="block  bg-primary rounded-lg px-4 py-2 font-semibold text-white">Profile</a>
+
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="md:col-span-3">
+                    <h2
+                        class="text-2xl font-display font-semibold text-gray-800 mb-6">Personal
+                        Information</h2>
+
+                    <!-- Profile Form -->
+                    <form class="bg-pink-50 p-6 rounded-xl space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Name -->
+                            <div>
+                                <label
+                                    class="block text-gray-800 font-semibold text-sm mb-2">Name</label>
+                                <input type="text" value="Rehman"
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none" />
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label
+                                    class="block text-gray-800 font-semibold text-sm mb-2">Email</label>
+                                <input type="email" value="rehman5895@gmail.com"
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none" />
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div>
+                                <label
+                                    class="block text-gray-800 font-semibold text-sm mb-2">Phone
+                                    Number</label>
+                                <input type="text" placeholder="Your Number"
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none" />
+                            </div>
+
+                            <!-- Preferred Language -->
+                            <div>
+                                <label
+                                    class="block text-gray-800 font-semibold text-sm mb-2">Preferred
+                                    Language</label>
+                                <select
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none">
+                                    <option>English</option>
+                                    <option>Arabic</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Save Button -->
+                        <div>
+                            <button type="submit"
+                                class="bg-primary text-white text-sm font-semibold rounded-lg px-8 py-2.5 hover:bg-pink-600 transition">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Include Header/Footer -->
+        <script>
+    async function includeHTML(id, filePath) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const res = await fetch(filePath);
+      el.innerHTML = await res.text();
+      if (typeof initCommonJS === "function") initCommonJS();
+    }
+    includeHTML("header-placeholder", "./components/header.html");
+    includeHTML("footer-placeholder", "./components/footer.html");
+  </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Add Review | Lamasat Beauty Salon</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F33FA2",
+            "medium-gray": "#9CA3AF",
+            "light-gray": "#F3F4F6",
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+    </head>
+
+    <body class="font-sans bg-white">
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- Add Review Section -->
+        <section class="max-w-screen-xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+
+                <!-- Sidebar -->
+                <aside class="border border-gray-200 rounded-xl p-6">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="./assets/user.png" alt="User"
+                            class="w-20 h-20 rounded-full mb-3" />
+                        <h3
+                            class="font-semibold text-lg text-gray-800">Rehman</h3>
+                        <p class="text-sm text-gray-500 mb-6">Customer Panel</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="/cutomerpanelbooking.html"
+                            class="block hover:bg-light-gray  text-gray-700 font-semibold rounded-lg px-4 py-2">Bookings</a>
+                        <a href="/reviews.html"
+                            class="block  bg-primary rounded-lg px-4 py-2 font-semibold text-white">Reviews</a>
+                        <a href="/profile.html"
+                            class="block hover:bg-light-gray rounded-lg px-4 py-2 font-semibold text-gray-700">Profile</a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="md:col-span-3">
+                    <h2
+                        class="text-2xl font-display font-semibold text-gray-800 mb-1">Add
+                        Review</h2>
+                    <p class="text-gray-500 text-sm mb-6">Share your feedback
+                        about our services or professionals.</p>
+
+                    <!-- Add Review Form -->
+                    <form class="bg-pink-50 p-6 rounded-xl space-y-6">
+                        <!-- Dropdowns -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-gray-800 font-semibold text-sm mb-2">Select
+                                    or Add Review For<span
+                                        class="text-red-500">*</span></label>
+                                <select
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none">
+                                    <option value>Select---</option>
+                                    <option value="service">Service</option>
+                                    <option
+                                        value="professional">Professional</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-gray-800 font-semibold text-sm mb-2">Select
+                                    Completed Services / Professionals<span
+                                        class="text-red-500">*</span></label>
+                                <select
+                                    class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none">
+                                    <option value="haircut">Haircut &
+                                        Styling</option>
+                                    <option value="facial">Facial
+                                        Treatment</option>
+                                    <option value="massage">Massage</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Rating -->
+                        <div>
+                            <label
+                                class="block text-gray-800 font-semibold text-sm mb-2">Rating</label>
+                            <div
+                                class="flex items-center gap-1 text-[#FFD700] text-xl mb-1">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span
+                                    class="text-gray-800 text-sm ml-2 font-semibold">5.0</span>
+                            </div>
+                        </div>
+
+                        <!-- Customer Name -->
+                        <div>
+                            <label
+                                class="block text-gray-800 font-semibold text-sm mb-2">Customer
+                                Name <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" placeholder="Name"
+                                class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none" />
+                        </div>
+
+                        <!-- Feedback -->
+                        <div>
+                            <label
+                                class="block text-gray-800 font-semibold text-sm mb-2">Feedback
+                                <span
+                                    class="text-red-500">*</span></label>
+                            <textarea rows="4" placeholder="Your text"
+                                class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm text-gray-600 focus:ring-2 focus:ring-primary outline-none resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit"
+                                class="bg-primary text-white text-sm font-semibold rounded-full px-8 py-2.5 hover:bg-pink-600 transition">
+                                Add Review
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Include Header/Footer -->
+        <script>
+    async function includeHTML(id, filePath) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const res = await fetch(filePath);
+      el.innerHTML = await res.text();
+      if (typeof initCommonJS === "function") initCommonJS();
+    }
+    includeHTML("header-placeholder", "./components/header.html");
+    includeHTML("footer-placeholder", "./components/footer.html");
+  </script>
+        <script src="./assets/js/common.js"></script>
+    </body>
+
+</html>
